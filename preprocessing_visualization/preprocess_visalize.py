@@ -12,6 +12,10 @@ data = pd.read_csv("../loan_data.csv")
 #print(data) # inspect the features
 #print(data.dtypes) # inspect categorical vs numerical features
 
+# Remove outliers
+indexAge = data[(data['person_age'] < 10) | (data['person_age'] > 100)].index
+data.drop(indexAge, inplace=True)
+
 # Inspect how many categories exist for categorical features
 obj = (data.dtypes == 'object')
 object_cols = list(obj[obj].index)

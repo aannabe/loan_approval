@@ -23,7 +23,8 @@ The dataset (45k observations) was partitioned into 80/20% for training/testing 
 
 | Classifier Model       | Accuracy | F1 Score | ROC-AUC |
 | ---------------------- | -------- | -------- | ------- |
-| Logistic Regression    |  |  |  |
+| Logistic Regression    | 0.8919   | 0.7532   | 0.9477  |
 | Random Forest          |  |  |  |
 | k-Nearest Neighbor     |  |  |  |
 | Support Vector Machine |  |  |  |
+

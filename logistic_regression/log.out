@@ -1,0 +1,24 @@
+SCALED COEFFICIENTS:
+  0.044346589: person_age
+  0.037627990: person_gender
+  0.000000000: person_education
+  0.135439084: person_income
+  0.000000000: person_emp_exp
+  0.374216390: person_home_ownership
+ -0.596565450: loan_amnt
+ -0.297031955: loan_intent
+  0.977028616: loan_int_rate
+  1.309837745: loan_percent_income
+  0.000000000: cb_person_cred_hist_length
+ -0.440111689: credit_score
+ -3.768360384: previous_loan_defaults_on_file
+Logistic Regression:
+Accuracy score of train set: 0.8912
+Accuracy score of valid set: 0.8909
+Accuracy score of test set : 0.8919
+F1 score of train set: 0.7498
+F1 score of valid set: 0.7460
+F1 score of test set : 0.7532
+ROC-AUC score of train set: 0.9504
+ROC-AUC score of valid set: 0.9489
+ROC-AUC score of test set:  0.9477
