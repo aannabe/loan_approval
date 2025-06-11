@@ -1,0 +1,10 @@
+kNN Regression:
+Accuracy score of train set: 0.9109
+Accuracy score of valid set: 0.8954
+Accuracy score of test set : 0.8940
+F1 score of train set: 0.7876
+F1 score of valid set: 0.7432
+F1 score of test set : 0.7453
+ROC-AUC score of train set: 0.9648
+ROC-AUC score of valid set: 0.9469
+ROC-AUC score of test set:  0.9468

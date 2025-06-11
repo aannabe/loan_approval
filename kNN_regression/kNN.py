@@ -58,13 +58,12 @@ X_tmp, X_test, Y_tmp, Y_test = train_test_split(X_scaled, Y, test_size=test_frac
 frac_test = 1 - train_frac / (train_frac + valid_frac)
 X_train, X_valid, Y_train, Y_valid = train_test_split(X_tmp, Y_tmp, test_size=frac_test, random_state=42, stratify=Y_tmp)
 
-from sklearn.linear_model import LogisticRegression
-#clf = LogisticRegression()
-#clf = LogisticRegression(penalty='l1', solver='liblinear', C=0.1)
-#clf = LogisticRegression(penalty='l2', solver='liblinear', C=0.1)
-clf = LogisticRegression(penalty='elasticnet', solver='saga', C=0.1, l1_ratio=0.8, max_iter=500)
+from sklearn.neighbors import KNeighborsClassifier
+k = 15 # 15 is close to optimal from manual scan
+clf = KNeighborsClassifier(n_neighbors=k)
 
 clf.fit(X_train, Y_train)
+
 pred_train = clf.predict(X_train)
 pred_valid = clf.predict(X_valid)
 pred_test  = clf.predict(X_test)
@@ -73,11 +72,11 @@ proba_train = clf.predict_proba(X_train)[:, 1]
 proba_valid = clf.predict_proba(X_valid)[:, 1]
 proba_test  = clf.predict_proba(X_test)[:, 1]
 
-print("SCALED COEFFICIENTS:")
-for i, var in enumerate(list(X.columns)):
-    print("{:13.9f}: {}".format(clf.coef_[0][i], var))
+#print("SCALED COEFFICIENTS:")
+#for i, var in enumerate(list(X.columns)):
+#    print("{:13.9f}: {}".format(clf.coef_[0][i], var))
 
-print("Logistic Regression:")
+print("kNN Regression:")
 print("Accuracy score of train set: {:.4f}".format(metrics.accuracy_score(Y_train, pred_train)))
 print("Accuracy score of valid set: {:.4f}".format(metrics.accuracy_score(Y_valid, pred_valid)))
 print("Accuracy score of test set : {:.4f}".format(metrics.accuracy_score(Y_test,  pred_test)))

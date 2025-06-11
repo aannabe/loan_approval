@@ -19,12 +19,12 @@ Similar datasets are commonly used in machine learning and data analysis to deve
 ## Comparisons
 The above models were used as implemented in the `sklearn` package.
 The table below shows the performance of the classifiers.
-The dataset (45k observations) was partitioned into 80/20% for training/testing purposes.
+The dataset (45k observations) was randomly partitioned into 60/20/20% for training/validation/testing purposes.
 
 | Classifier Model       | Accuracy | F1 Score | ROC-AUC |
 | ---------------------- | -------- | -------- | ------- |
 | Logistic Regression    | 0.8919   | 0.7532   | 0.9477  |
 | Random Forest          |  |  |  |
-| k-Nearest Neighbor     |  |  |  |
+| k-Nearest Neighbor     | 0.8940   | 0.7453   | 0.9468  |
 | Support Vector Machine |  |  |  |
 
