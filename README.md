@@ -23,8 +23,8 @@ The dataset (45k observations) was randomly partitioned into 60/20/20% for train
 
 | Classifier Model       | Accuracy | F1 Score | ROC-AUC |
 | ---------------------- | -------- | -------- | ------- |
-| Logistic Regression    | 0.8919   | 0.7532   | 0.9477  |
-| Random Forest          |  |  |  |
 | k-Nearest Neighbor     | 0.8940   | 0.7453   | 0.9468  |
+| Logistic Regression    | 0.8919   | 0.7532   | 0.9477  |
+| Random Forest          | 0.9275   | 0.8242   | 0.9729  |
 | Support Vector Machine |  |  |  |
 

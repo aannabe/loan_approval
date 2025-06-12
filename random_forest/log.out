@@ -1,0 +1,10 @@
+Random Forest Classification:
+Accuracy score of train set: 1.0000
+Accuracy score of valid set: 0.9223
+Accuracy score of test set : 0.9275
+F1 score of train set: 1.0000
+F1 score of valid set: 0.8078
+F1 score of test set : 0.8242
+ROC-AUC score of train set: 1.0000
+ROC-AUC score of valid set: 0.9703
+ROC-AUC score of test set:  0.9729
