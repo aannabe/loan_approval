@@ -1,0 +1,7 @@
+SVM Classification:
+Accuracy score of train set: 0.9288
+Accuracy score of valid set: 0.9050
+Accuracy score of test set : 0.9091
+F1 score of train set: 0.8316
+F1 score of valid set: 0.7731
+F1 score of test set : 0.7846
