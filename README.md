@@ -11,6 +11,7 @@ It includes various factors about the applicant, such as the credit score, incom
 Similar datasets are commonly used in machine learning and data analysis to develop models and algorithms that predict the likelihood of loan approval based on the given features.
 
 ## Models
+- Naive Bayes (GaussianNB)
 - k-Nearest Neighbor (k-NN)
 - Logistic Regression
 - Support Vector Machine (SVM)
@@ -23,6 +24,7 @@ The table below shows the performance of the classifiers in the test partition.
 
 | Classifier Model       | Accuracy | F1 Score |
 | ---------------------- | -------- | -------- |
+| Naive Bayes            | 0.7325   | 0.6237   |
 | k-Nearest Neighbor     | 0.8940   | 0.7453   |
 | Logistic Regression    | 0.8919   | 0.7532   |
 | Support Vector Machine | 0.9091   | 0.7846   |

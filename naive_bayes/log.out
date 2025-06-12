@@ -1,0 +1,10 @@
+Naive Bayes Classification:
+Accuracy score of train set: 0.7302
+Accuracy score of valid set: 0.7366
+Accuracy score of test set : 0.7325
+F1 score of train set: 0.6214
+F1 score of valid set: 0.6274
+F1 score of test set : 0.6237
+ROC-AUC score of train set: 0.9397
+ROC-AUC score of valid set: 0.9370
+ROC-AUC score of test set:  0.9387
